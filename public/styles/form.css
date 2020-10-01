@@ -6,7 +6,7 @@
     
     
 }
-.cadastro-page{
+.title-page{
     margin-left: 30rem;
 }
 form{
@@ -16,7 +16,8 @@ form{
 .input-block,
 .input-block-number,
 .input-block-tell,
-.select-block {
+.select-block,
+.input-block-price {
     width: 20%;
     height: 1.50rem;
     margin-top: 0.8rem;
@@ -65,4 +66,12 @@ label{
 
 .cadastro:hover{
     background-color:  rgb(0, 206, 0);
+}
+
+.input-block-price{
+    width: 5rem;
+}
+.input-block-price::-webkit-outer-spin-button,
+.input-block-price::-webkit-inner-spin-button{
+    -webkit-appearance: none;
 }

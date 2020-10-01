@@ -15,7 +15,7 @@
                 <button class="button" name="clientes" onclick="window.location.href=''">Clientes</button>
                 <button class="button" name="produtos" onclick="">Produtos</button>
                 <button class="button" name="cadastrar-clientes" onclick="window.location.href='cadastro-cliente.php'">Cadastrar Cliente</button>
-                <button class="button" name="cadastrar-pedidos" onclick="">Cadastrar Produtos</button>
+                <button class="button" name="cadastrar-pedidos" onclick="window.location.href='cadastro-produtos.php'">Cadastrar Produtos</button>
             </li>
         </div>
 

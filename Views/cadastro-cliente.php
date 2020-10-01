@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="page-landing">
-        <div class="cadastro-page">
+        <div class="title-page">
             <h1 class="page-title">Cadastro de Clientes</h1>
         </div>
 
@@ -43,6 +43,7 @@
                 <input class="input-block" type="text" name="cidade" required="">
                 <label for="">Estado</label>
                 <select class="select-block" name="estado" id="" required="">
+                    <option value="--">--</option>
                     <option value="acre">AC</option>
                     <option value="alagoas">AL</option>
                     <option value="amapa">AP</option>

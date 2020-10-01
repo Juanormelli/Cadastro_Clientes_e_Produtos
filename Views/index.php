@@ -33,7 +33,7 @@
                     <h1 class="menu-title">Cadastrar/Alterar dados de cliente</h1>
                 </div>
             </button>
-            <button class="menu-button" nome= "menu-button-cadastrar" onclick="window.location.href=' login.html'">
+            <button class="menu-button" nome= "menu-button-cadastrar" onclick="window.location.href='cadastro-produtos.php'">
                 <div class="menu">
                         <img class="adjust"src="/P.I/public/img/Adicionar-produtos.png" alt="Cadastro-de-produto">
                     <h1 class="menu-title">Cadastrar Produtos</h1>      
