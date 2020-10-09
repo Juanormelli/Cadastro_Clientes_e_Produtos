@@ -1,0 +1,23 @@
+
+.table-set{
+    margin-top: 1.5rem;
+    align-items: center;
+    margin-left: 18rem;
+    border-spacing: 0;
+    
+    
+}
+td{
+    font-weight: bolder;
+    border: 1px solid black;
+    background-color: rgb(255, 207, 103,0.4) ;
+    
+    text-align: center;
+    width: 60rem;
+    vertical-align: initial;
+    
+}
+.name{
+    width: 300rem;
+
+}

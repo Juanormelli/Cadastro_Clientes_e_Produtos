@@ -4,46 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/P.I/public/styles/form.css">
-    
-    <?php include "header.php"?>
-    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="/P.I/public/styles/filtros.css">
+    <link rel="stylesheet" href="/P.I/public/styles/tables.css">
+
+    <?php include "header.php" ?>
+    <title>Clientes</title>
 </head>
 <body>
     <div class="page-landing">
         <div class="title-page">
-            <h1 class="page-title">Cadastro de Clientes</h1>
+            <h1 class="page-title"> Clientes cadastrados</h1>
         </div>
-
+        
         <form action="" method="post">
             <div class="campos">
                 <label for="">Nome da Empresa</label>    
-                <input class="input-block" type="text" name="rzsocial" required="">
+                <input class="input-block" type="text" name="rzsocial" >
             </div>
             <div class="campos">
                 <label for="">CNPJ</label>    
-                <input class="input-block" type="text" name="cnpj" required="">
+                <input class="input-block" type="text" name="cnpj" >
             </div>
             <div class="campos">
                 <label for="">Telefone</label>    
-                <input class="input-block" type="number" name="telefone" required="">
+                <input class="input-block-tell" type="number" name="telefone" >
             </div>
             <div class="campos">
                 <label for="">Logradouro</label>    
-                <input class="input-block" type="text" name="logradouro" required="">
+                <input class="input-block" type="text" name="logradouro" >
                 <label for="">Numero</label>    
-                <input class="input-block-number" type="text" name="numero" required="">
+                <input class="input-block-number" type="text" name="numero" >
                             
                                
             </div>
             <div class="campos">
                 <label for="">Complemento</label>    
-                <input class="input-block" type="text" name="complemento" required="">
+                <input class="input-block" type="text" name="complemento" >
             </div>
             <div class="campos">
                 <label for="">Cidade</label>    
-                <input class="input-block" type="text" name="cidade" required="">
+                <input class="input-block" type="text" name="cidade" >
                 <label for="">Estado</label>
-                <select class="select-block" name="estado" id="" required="">
+                <select class="select-block" name="estado" id="" >
                     <option value="--">--</option>
                     <option value="acre">AC</option>
                     <option value="alagoas">AL</option>
@@ -75,11 +77,32 @@
                 
             </div>
 
-            <button class="cadastro"type="submit" name="btnCadastrar">Adicionar Cliente </button>
+            
+            <button type="submit" class="filter-button">Filtrar</button>        
 
         </form>
+        
+        <table class="client-table">
+       >
+        <tr class="table-header">
+        <td>Nome da Empresa</td>
+        <td>CNPJ</td>
+        <td>Telefone</td>
+        <td>Endereço</td>
+        <td>Numero</td>
+        <td>Complemento</td>
+        <td>Cidade</td>
+        <td>Estado</td>
 
+        
+        </tr>
+        
+        
+        
+        
+        </table>
+
+        
     </div>
-    
 </body>
 </html>
