@@ -1,13 +1,19 @@
 
-.table-set{
+.table-set, .table-set-client{
     margin-top: 1.5rem;
     align-items: center;
+    margin-right: 0;
     margin-left: 18rem;
     border-spacing: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    width: 100%;
 }
-.columns, .name{
+
+.table-set-client{
+
+    margin-left: 10rem;
+}
+.columns, .name, .columns-cnpj{
     font-weight: bolder;
     border: 1px solid black;
     background-color: rgb(255, 207, 103,0.4) ;
@@ -19,8 +25,8 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-.name{
-    width: 300rem;
+.name, .columns-cnpj{
+    width: 500rem;
 
 }
 .line{

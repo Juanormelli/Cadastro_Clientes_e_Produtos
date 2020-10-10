@@ -1,7 +1,7 @@
 <?php
 include "connection.php";
 
-mysqli_select_db($connection,"testepi");
+
 
 
 $codigoProduto=$_POST["cdg-produto"];
