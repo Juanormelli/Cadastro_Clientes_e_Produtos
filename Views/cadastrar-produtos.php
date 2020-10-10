@@ -23,6 +23,6 @@ else{
    echo $sql.mysqli_error($connection);
 }
 
-
+mysqli_close($connection)
 
 ?>

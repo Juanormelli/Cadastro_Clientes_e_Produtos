@@ -7,6 +7,7 @@
 
     
     <?php include "header.php";
+   
     
     ?>
     <title>Cadastro de produtos</title>
@@ -16,7 +17,7 @@
         <div class="title-page">
             <h1 class="page-title">Cadastro de produtos</h1>
         </div>
-
+        
         <form action="cadastrar-produtos.php" method="post">
             <div class="campos">
                 <label for="">Codigo do produto</label>    

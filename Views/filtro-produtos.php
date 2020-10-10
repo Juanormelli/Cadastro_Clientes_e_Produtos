@@ -1,10 +1,13 @@
 <?php
 include "connection.php";
 
-$sql ='SELECT codigo,nome,preco,unidade FROM produtos';
 
-$data= mysqli_query($connection,$sql) or die (mysqli_error($connection));
+$productpost=array("codigo"=>$_POST['cdg-produto'], "nome"=>$_POST['nome-do-produto'],"preco"=>$_POST['preço'],"unidade"=>$_POST['unidade']);
 
+$sql= "SELECT codigo,nome,preco,unidade FROM produtos 
+WHERE codigo='$productpost[codigo]' OR nome='$productpost[nome]' OR preco='$productpost[preco]' OR unidade='$productpost[unidade]'";
+
+$data=mysqli_query($connection,$sql) or die (mysqli_error($connection));
 
 $total = mysqli_num_rows($data);
 if($total>0){

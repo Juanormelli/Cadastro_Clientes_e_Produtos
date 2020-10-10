@@ -19,7 +19,7 @@
                     <h1 class="menu-title">Clientes</h1>
                 </div>
             </button>
-            <button class="menu-button" nome= "menu-button" onclick="window.location.href=' '">
+            <button class="menu-button" nome= "menu-button" onclick="window.location.href='produtos.php'">
                 <div class="menu">
                     <img src="/P.I/public/img/PEDIDO.png" alt="Produtos">
                     <h1 class="menu-title">Produtos</h1>
