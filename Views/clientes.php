@@ -18,7 +18,7 @@
             <h1 class="page-title"> Clientes cadastrados</h1>
         </div>
 
-        <form action="" method="post">
+        <form action="clientes.php" method="post">
             <div class="campos">
                 <label for="">Nome da Empresa</label>
                 <input class="input-block" type="text" name="rzsocial">
@@ -33,7 +33,7 @@
             </div>
             <div class="campos">
                 <label for="">Logradouro</label>
-                <input class="input-block" type="text" name="logradouro">
+                <input class="input-block" type="text" name="endereco">
                 <label for="">Numero</label>
                 <input class="input-block-number" type="text" name="numero">
 
@@ -80,7 +80,8 @@
             </div>
 
 
-            <button type="submit" class="filter-button">Filtrar</button>
+            <button type="submit" class="filter-button" name='btnFiltrar'>Filtrar</button>
+            <button type="submit" class="filter-button" name='btnAll'>Mostrar todos</button>
 
         </form>
         
@@ -100,12 +101,24 @@
 
 
             </tr>
-            <?php if(isset($_POST['btnEdit'])){
-            echo "<form class='table-form' action='excluir-cliente.php' method='post'>";
+            
+            
+            
+            <?php if(isset($_POST['btnFiltrar'])){
+                include "filtro-clientes.php";
             }
-            
-            
-            include "clientes-view.php"?>
+            elseif (isset($_POST['btnAll'])){
+                include "clientes-view.php";
+
+            }
+            else{
+                include "clientes-view.php";
+
+            }
+
+
+
+            ?>
             
             </form>
 
