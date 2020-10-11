@@ -4,7 +4,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./P.I/public/styles/main.css">
+    
     <link rel="stylesheet" href="/P.I/public/styles/header.css">
     <title>Document</title>
 </head>

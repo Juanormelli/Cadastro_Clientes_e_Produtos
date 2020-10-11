@@ -34,24 +34,24 @@ if($total>0){
                     <h1 class='page-title'>Editar dados de Cliente</h1>
                 </div>
         
-                <form action='cadastrar-clientes.php' method='post'>
+                <form action='editar-clientes.php' method='post'>
                     <div class='campos'>
                         <label for=''>Nome da Empresa</label>    
                         <input class='input-block' type='text' name='rzsocial' required='' value='$nomeEditar'>
                     </div>
                     <div class='campos'>
                         <label for=''>CNPJ</label>    
-                        <input class='input-block' type='number' name='cnpj' required='' Value='$cnpjEditar'>
+                        <input class='input-block' type='text' name='cnpj' required='' Value='$cnpjEditar'>
                     </div>
                     <div class='campos'>
                         <label for=''>Telefone</label>    
-                        <input class='input-block' type='number' name='telefone' required='' value='$telefoneEditar'>
+                        <input class='input-block-tell' type='number' name='telefone' required='' value='$telefoneEditar'>
                     </div>
                     <div class='campos'>
                         <label for=''>Endereço</label>    
                         <input class='input-block' type='text' name='endereco' required='' value='$enderecoEditar'>
                         <label for=''>Numero</label>    
-                        <input class='input-block-number' type='text' name='numero' required='' value='$numeroEditar'>
+                        <input class='input-block-number' type='number' name='numero' required='' value='$numeroEditar'>
                                     
                                        
                     </div>
@@ -95,7 +95,7 @@ if($total>0){
                         
                     </div>
         
-                    <button class='cadastro'type='submit' name='btnCadastrar'>Adicionar Cliente </button>
+                    <button class='cadastro'type='submit' name='btnEditarCadasatro'>Editar Cadastro</button>
         
                 </form>
                 

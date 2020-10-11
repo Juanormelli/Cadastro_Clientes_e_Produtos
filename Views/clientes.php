@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/P.I/public/styles/form.css">
-    <link rel="stylesheet" href="/P.I/public/styles/filtros.css">
+    
     <link rel="stylesheet" href="/P.I/public/styles/tables.css">
 
     <?php include "header.php" ?>
@@ -83,7 +83,7 @@
             <button type="submit" class="filter-button">Filtrar</button>
 
         </form>
-        <form class="table-form" action="editar-dados-cliente.php" method="post">
+        
         <table class="table-set-client">
 
             <tr class="table-header">
@@ -100,9 +100,14 @@
 
 
             </tr>
-
-            <?php include "clientes-view.php"?>
-
+            <?php if(isset($_POST['btnEdit'])){
+            echo "<form class='table-form' action='excluir-cliente.php' method='post'>";
+            }
+            
+            
+            include "clientes-view.php"?>
+            
+            </form>
 
         </table>
 

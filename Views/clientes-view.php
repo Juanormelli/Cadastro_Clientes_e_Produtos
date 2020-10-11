@@ -13,8 +13,8 @@ if($total>0){
         $name = ucfirst($lines['nome']);
         $endereco=ucfirst($lines['endereco']);
         
-        echo"<tr class='lines' >
-        <td class='line'><input class='input-table' type='hidden' name='nome-empresa' value=". $name." readonly>".$name."</td>
+        echo"<form class='table-form' action='excluir-cliente.php' method='post'><tr class='lines' >
+        <td class='line'><input class='input-table' type='hidden' name='nome-empresa' value='".$name."' readonly>".$name."</td>
         <td class='line'><input class='input-table' type='hidden' name='cnpj' value= $lines[cnpj] readonly>".$lines['cnpj']."</td>
         <td class='line'><input class='input-table' type='hidden' name='telefone' value=$lines[telefone] readonly>".$lines['telefone']."</td>
         <td class='line'><input class='input-table' type='hidden' name='endereco' value= '".$endereco."'readonly>".$endereco."</td>
@@ -22,7 +22,9 @@ if($total>0){
         <td class='line'><input class='input-table' type='hidden' name='complemento' value=$lines[complemento] readonly>".$lines['complemento']."</td>
         <td class='line'><input class='input-table' type='hidden' name='cidade' value='".$lines['cidade']."' readonly>".$lines['cidade']."</td>
         <td class='line'><input class='input-table' type='hidden' name='estado' value=$lines[estado] readonly>".$lines['estado']."</td>
-        <td class='line'><button type='submit' class='filter-button'>Editar Cadastro</button></tr>";
+        <td class='line'><button type='submit' name='btnEdit' class='edit-button'>U</button>
+        <button type='submit' name='btnDelete' class='delete-button'>D</button></tr></form>";
+        
         
     }
 }
