@@ -83,7 +83,7 @@
             <button type="submit" class="filter-button">Filtrar</button>
 
         </form>
-
+        <form class="table-form" action="editar-dados-cliente.php" method="post">
         <table class="table-set-client">
 
             <tr class="table-header">
@@ -93,7 +93,7 @@
                 <td class="columns">Endereço</td>
                 <td class="columns">N°</td>
                 <td class="columns">Comp</td>
-                <td class="columns">Cidade</td>
+                <td class="columns-city">Cidade</td>
                 <td class="columns">Estado</td>
                 <td class="columns">Ações</td>
 
@@ -101,12 +101,12 @@
 
             </tr>
 
-
+            <?php include "clientes-view.php"?>
 
 
         </table>
 
-
+        </form>
     </div>
 </body>
 

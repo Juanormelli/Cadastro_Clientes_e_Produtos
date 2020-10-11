@@ -13,7 +13,7 @@
    
     <div id="principal-page">
         <li class="menu-content">
-            <button class="menu-button" nome= "menu-button" onclick="window.location.href=' '">
+            <button class="menu-button" nome= "menu-button" onclick="window.location.href='clientes.php '">
                 <div class="menu">
                     <img src="/P.I/public/img/cliente.jpg" alt="Clientes">
                     <h1 class="menu-title">Clientes</h1>

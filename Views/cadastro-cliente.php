@@ -78,7 +78,7 @@
             <button class="cadastro"type="submit" name="btnCadastrar">Adicionar Cliente </button>
 
         </form>
-
+        
     </div>
     
 </body>
