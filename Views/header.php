@@ -13,10 +13,10 @@
         <div class="landing-page">
             <li class="button-list">
                 <button class="button" name="Inicio" onclick="window.location.href='index.php'">Inicio</button>
-                <button class="button" name="clientes" onclick="window.location.href='clientes.php'">Clientes</button>
-                <button class="button" name="produtos" onclick="window.location.href='produtos.php'">Produtos</button>
-                <button class="button" name="cadastrar-clientes" onclick="window.location.href='cadastro-cliente.php'">Cadastrar Cliente</button>
-                <button class="button" name="cadastrar-pedidos" onclick="window.location.href='cadastro-produtos.php'">Cadastrar Produtos</button>
+                <button class="button" name="clientes" onclick="window.location.href='clients.php'">Clientes</button>
+                <button class="button" name="produtos" onclick="window.location.href='products.php'">Produtos</button>
+                <button class="button" name="cadastrar-clientes" onclick="window.location.href='form_insert_client.php'">Cadastrar Cliente</button>
+                <button class="button" name="cadastrar-pedidos" onclick="window.location.href='form_insert_product.php'">Cadastrar Produtos</button>
             </li>
         </div>
 

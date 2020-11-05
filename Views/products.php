@@ -48,21 +48,21 @@
             <td class="name">Nome Produto</td>
             <td class="columns">Preço</td>
             <td class="columns">Unidade de medida</td>
-            
+            <td class="columns">Atualizar Produto</td>
 
         </tr>
 
         <?php
         if(isset($_POST['btnFilter'])){
 
-            include "filtro-produtos.php";
+            include "product_filter.php";
         } 
         elseif(isset($_POST['btnAll'])){
-            include "produtos-view.php";
+            include "all_product_view.php";
             
         }
         else{
-            include "produtos-view.php";
+            include "all_product_view.php";
             
         }
 

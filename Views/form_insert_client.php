@@ -14,7 +14,7 @@
             <h1 class="page-title">Cadastro de Clientes</h1>
         </div>
 
-        <form action="cadastrar-clientes.php" method="post">
+        <form action="insert_client.php" method="post">
             <div class="campos">
                 <label for="">Nome da Empresa</label>    
                 <input class="input-block" type="text" name="rzsocial" required="">
@@ -37,7 +37,7 @@
             </div>
             <div class="campos">
                 <label for="">Complemento</label>    
-                <input class="input-block" type="text" name="complemento" required="">
+                <input class="input-block" type="text" name="complemento" >
             </div>
             <div class="campos">
                 <label for="">Cidade</label>    

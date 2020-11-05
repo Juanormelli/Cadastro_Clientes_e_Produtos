@@ -18,7 +18,7 @@
             <h1 class="page-title"> Clientes cadastrados</h1>
         </div>
 
-        <form action="clientes.php" method="post">
+        <form action="" method="post">
             <div class="campos">
                 <label for="">Nome da Empresa</label>
                 <input class="input-block" type="text" name="rzsocial">
@@ -105,14 +105,14 @@
             
             
             <?php if(isset($_POST['btnFiltrar'])){
-                include "filtro-clientes.php";
+                include "filter_client.php";
             }
             elseif (isset($_POST['btnAll'])){
-                include "clientes-view.php";
+                include "all_clients_filter.php";
 
             }
             else{
-                include "clientes-view.php";
+                include "all_clients_filter.php";
 
             }
 

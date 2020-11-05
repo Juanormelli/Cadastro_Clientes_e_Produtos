@@ -9,12 +9,10 @@
     $cidadeExcluir=$_POST['cidade'];
     $estadoExcluir=$_POST['estado'];
 
-    if(isset($_POST['btnEdit'])){
-        include "editar-dados-cliente.php";
-    }
-    else{
+    
+    
         
-        $sql="DELETE FROM clientes WHERE cnpj=$cnpjExcluir ";
+    $sql="DELETE FROM clientes WHERE cnpj=$cnpjExcluir ";
 
     if(mysqli_query($connection,$sql)){
         echo ("<SCRIPT LANGUAGE = 'JavaScript'>
@@ -25,7 +23,7 @@
         else{
            echo $sql.mysqli_error($connection);
         }
-        mysqli_close($connection);
-    }
         
+    
+    mysqli_close($connection);
 ?>

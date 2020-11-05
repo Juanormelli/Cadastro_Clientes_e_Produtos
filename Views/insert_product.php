@@ -16,7 +16,7 @@ VALUES ('$codigoProduto','$nomeProduto','$precoProduto','$unidadeProduto')";
 if(mysqli_query($connection,$sql)){
 echo ("<SCRIPT LANGUAGE = 'JavaScript'>
 window.alert('Adicionado com Sucesso') 
-window.location.href='cadastro-produtos.php';
+window.location.href='form_insert_product.php';
 </SCRIPT>");
 }
 else{

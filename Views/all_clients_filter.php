@@ -1,20 +1,7 @@
 <?php
-
 include "connection.php";
-    $nomeEmpresa=$_POST['rzsocial'];
-    $cnpjEmpresa=$_POST['cnpj'];
-    $telefoneEmpresa=$_POST['telefone'];
-    $enderecoEmpresa=$_POST['endereco'];
-    $complementoEmpresa=$_POST['complemento'];
-    $numeroEmpresa=$_POST['numero'];
-    $cidadeEmpresa=$_POST['cidade'];
-    $estadoEmpresa=$_POST['estado'];
 
-    $sql="SELECT * FROM clientes 
-    WHERE nome='$nomeEmpresa' or cnpj='$cnpjEmpresa'
-    or telefone ='$telefoneEmpresa' or endereco='$enderecoEmpresa'
-    or complemento='$complementoEmpresa' or numero='$numeroEmpresa'
-    or cidade= '$cidadeEmpresa' or estado='$estadoEmpresa'";
+$sql ='SELECT * FROM clientes';
 
 $data= mysqli_query($connection,$sql) or die (mysqli_error($connection));
 
@@ -26,7 +13,7 @@ if($total>0){
         $name = ucfirst($lines['nome']);
         $endereco=ucfirst($lines['endereco']);
         
-        echo"<form class='table-form' action='excluir-cliente.php' method='post'><tr class='lines' >
+        echo"<form class='table-form' action='updt_or_delete.php' method='post'><tr class='lines' >
         <td class='line'><input class='input-table' type='hidden' name='nome-empresa' value='".$name."' readonly>".$name."</td>
         <td class='line'><input class='input-table' type='hidden' name='cnpj' value= $lines[cnpj] readonly>".$lines['cnpj']."</td>
         <td class='line'><input class='input-table' type='hidden' name='telefone' value=$lines[telefone] readonly>".$lines['telefone']."</td>

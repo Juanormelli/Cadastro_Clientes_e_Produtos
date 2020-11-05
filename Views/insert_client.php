@@ -18,14 +18,14 @@
     if(mysqli_query($connection,$sql)){
         echo ("<SCRIPT LANGUAGE = 'JavaScript'>
         window.alert('Cliente Adicionado com sucesso') 
-        window.location.href='cadastro-cliente.php';
+        window.location.href='/P.I/Views/cadastro-cliente.php';
         </SCRIPT>");
-        echo $cnpjEmpresa;
+        
 
     }
     else{
         
-        echo $cnpjEmpresa;
+        
         echo $error=mysqli_error($connection);
     }
 

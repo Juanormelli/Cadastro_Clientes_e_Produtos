@@ -18,7 +18,7 @@
             <h1 class="page-title">Cadastro de produtos</h1>
         </div>
         
-        <form action="cadastrar-produtos.php" method="post">
+        <form action="insert_product.php" method="post">
             <div class="campos">
                 <label for="">Codigo do produto</label>    
                 <input class="input-block" type="text" name="cdg-produto" required="">

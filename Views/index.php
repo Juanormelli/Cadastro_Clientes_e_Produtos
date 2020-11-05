@@ -13,7 +13,7 @@
    
     <div id="principal-page">
         <li class="menu-content">
-            <button class="menu-button" nome= "menu-button" onclick="window.location.href='clientes.php '">
+            <button class="menu-button" nome= "menu-button" onclick="window.location.href='clients.php '">
                 <div class="menu">
                     <img src="/P.I/public/img/cliente.jpg" alt="Clientes">
                     <h1 class="menu-title">Clientes</h1>
@@ -28,13 +28,13 @@
             
         </li>
         <li class="menu-content">
-            <button class="menu-button" nome= "menu-button" onclick="window.location.href='cadastro-cliente.php'">
+            <button class="menu-button" nome= "menu-button" onclick="window.location.href='form_insert_client.php'">
                 <div class="menu">
                     <img src="/P.I/public/img/Cadastro-Cliente.png" alt="Cadastrar/Alterar-dados-de-cliente">
                     <h1 class="menu-title">Cadastrar/Alterar dados de cliente</h1>
                 </div>
             </button>
-            <button class="menu-button" nome= "menu-button-cadastrar" onclick="window.location.href='cadastro-produtos.php'">
+            <button class="menu-button" nome= "menu-button-cadastrar" onclick="window.location.href='form_insert_product'">
                 <div class="menu">
                         <img class="adjust"src="/P.I/public/img/Adicionar-produtos.png" alt="Cadastro-de-produto">
                     <h1 class="menu-title">Cadastrar Produtos</h1>      

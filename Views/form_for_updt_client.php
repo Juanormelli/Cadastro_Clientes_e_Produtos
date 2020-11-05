@@ -9,7 +9,7 @@ $complementoEditar=$_POST['complemento'];
 $cidadeEditar=$_POST['cidade'];
 $estadoEditar=$_POST['estado'];
 
-$sql="SELECT nome,cnpj,telefone,endereco,numero,complemento,cidade,estado FROM clientes 
+$sql="SELECT * FROM clientes 
 WHERE cnpj='$cnpjEditar'"; 
 
 $data = mysqli_query($connection,$sql) or die (mysqli_error($connection));
@@ -34,7 +34,7 @@ if($total>0){
                     <h1 class='page-title'>Editar dados de Cliente</h1>
                 </div>
         
-                <form action='editar-clientes.php' method='post'>
+                <form action='update_client.php' method='post'>
                     <div class='campos'>
                         <label for=''>Nome da Empresa</label>    
                         <input class='input-block' type='text' name='rzsocial' required='' value='$nomeEditar'>
