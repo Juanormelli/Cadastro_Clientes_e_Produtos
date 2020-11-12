@@ -23,7 +23,7 @@ $sql="UPDATE clientes SET nome='$nomeEmpresa'
 if(mysqli_query($connection,$sql)){
     echo ("<SCRIPT LANGUAGE = 'JavaScript'>
     window.alert('Cadastro Atualizado com sucesso') 
-    window.location.href='clientes.php';
+    window.location.href='clients.php';
     </SCRIPT>");
     }
     else{

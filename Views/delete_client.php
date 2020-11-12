@@ -1,13 +1,8 @@
 <?php
     include "connection.php"; 
-    $nomeExcluir=$_POST['nome-empresa'];
+    
     $cnpjExcluir=$_POST['cnpj'];
-    $telefoneExcluir=$_POST['telefone'];
-    $enderecoExcluir=$_POST['endereco'];
-    $numeroExcluir=$_POST['numero'];
-    $complementoExcluir=$_POST['complemento'];
-    $cidadeExcluir=$_POST['cidade'];
-    $estadoExcluir=$_POST['estado'];
+    
 
     
     

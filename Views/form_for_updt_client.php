@@ -9,7 +9,7 @@ $complementoEditar=$_POST['complemento'];
 $cidadeEditar=$_POST['cidade'];
 $estadoEditar=$_POST['estado'];
 
-$sql="SELECT * FROM clientes 
+$sql="SELECT nome,cnpj,telefone,endereco,numero,complemento,cidade,estado FROM clientes 
 WHERE cnpj='$cnpjEditar'"; 
 
 $data = mysqli_query($connection,$sql) or die (mysqli_error($connection));

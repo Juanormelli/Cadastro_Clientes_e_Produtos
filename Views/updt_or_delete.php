@@ -5,10 +5,13 @@
     if(isset($_POST['btnEdit'])){
         include "form_for_updt_client.php";
     }
-    else{
+    elseif(isset($_POST['btnDelete'])){
         include "delete_client.php";
     }
-        
+    else{
+        include "form_for_updt_product.php";
+
+    }
     
     
 ?>
